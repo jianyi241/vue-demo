@@ -1,0 +1,12 @@
+@mixin textEllipsis {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin textSomeEllipsis($number) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number;
+    overflow: hidden;
+}
